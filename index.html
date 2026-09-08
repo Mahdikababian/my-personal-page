@@ -3,57 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my page</title>
+    <title>Mahdi Kababian | Personal Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>mahdi kababian</h1>
-        <p>frontend devloper</p>
-        <nav>
-            <a href="#about">about me</a>
-            <a href="#skills"> skills me</a>
-            <a href="#info">info me</a>
-            <a href="#contact">contact me</a>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>about me</h2>
-            <img src="" alt="my pic">
-            <p>im a soft developer web i love teching new technologi </p>
+
+    <div class="page">
+        <div class="top-spacer"></div>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Mahdi Kababian</h1>
+            <p class="job-title">Frontend Developer</p>
+            <nav class="nav">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#info">Information</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <div class="spacer"></div>
+
+        <!-- About -->
+        <section id="about" class="section about">
+<div class="about-image">
+            <img src="my-pic.jpg" alt="My Picture">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <hr>
+            <p>I am a computer software engineering student and frontend developer. I love technology and learning new technologies and programming skills.</p>
+            <p class="welcome">Welcome to my personal page</p>
+        </div>
+    </section>
+
+        <div class="spacer"></div>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <hr>
+            <table class="skills-table">
+                <tr>
+                                    <th>HTML</th>
+                                    <th>CSS</th>
+                                    <th>Python</th>
+                                    <th>WordPress</th>
+                </tr>
+                <tr>
+                                    <td>Web Structure</td>
+                                    <td>Web Design</td>
+                                    <td>Programming</td>
+                                    <td>Web Management</td>
+                </tr>
+            </table>
         </section>
-        <section id="skills" >
-            <h2>skills me</h2>
-            <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>python</li>
-                <li>wordpress</li>
-            </ul>
+
+        <div class="spacer"></div>
+
+        <!-- Information -->
+        <section id="info" class="section">
+            <h2>My Information</h2>
+            <hr>
+            <table class="info-table">
+                <tr>
+                                    <th>Name</th>
+                                    <td>Mahdi Kababian</td>
+                                </tr>
+                <tr>
+                    <th>Birth Date</th>
+                                    <td>2005/9/18</td>
+                                </tr>
+                <tr>
+                                    <th>City</th>
+                                    <td>Qazvin</td>
+                                </tr>
+                                <tr>
+                                    <th>Field</th>
+                                    <td>Computer Software Engineering</td>
+                                </tr>
+            </table>
         </section>
-        <section id="info" >
-         <h2>info me</h2>
-         <table>
-            <tr><th>name</th><td>mahdi kababian</td></tr>
-            <tr><th type="text" id="name"></th><td>2005/9/18</td></tr>
-            <tr><th>city</th><td>qazvin</td></tr>
-            <tr><th id="message"></th><td>soft enginer computer</td></tr>
-         </table>
-        </section>
-        <section id="contact">
-            <h2>contact me</h2>
-            <form>
-            <label for="name">name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="message">your text</label>
-            <textarea name="message" id="message" rows="5" required></textarea>
-            <button type="submit">send</button>
+
+        <div class="spacer"></div>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <hr>
+            <form class="contact-form">
+                <div class="form-row">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="contact-message">Your Message</label>
+                    <textarea name="message" id="contact-message" rows="6" required></textarea>
+                </div>
+                <div class="form-row">
+                    <label></label>
+                    <div><button type="submit">Send Message</button></div>
+                </div>
             </form>
         </section>
-        <footer>
-            <p></p>
+
+        <div class="spacer"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Mahdi Kababian</p>
+            <p class="muted">Personal Portfolio Page</p>
         </footer>
-    </main>
+
+        <div class="top-spacer"></div>
+        <div class="top-spacer"></div>
+    </div>
+
 </body>
 </html>
